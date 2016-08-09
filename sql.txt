@@ -1,0 +1,20 @@
+CREATE TABLE test.Configuration(
+   ApplicationID   VARCHAR(20) ,
+   EnvironmentID VARCHAR(20) ,
+   LevelID VARCHAR(20),
+   ConfigurationName  VARCHAR(20) ,
+   ConfigurationValue VARCHAR(20),
+   PRIMARY KEY (ApplicationID, EnvironmentID,LevelID, ConfigurationName )
+);
+
+CREATE TABLE test.Application(
+   ApplicationID   VARCHAR(20) ,
+   ApplicationName VARCHAR(20) ,
+   PRIMARY KEY (ApplicationID)
+);
+
+CREATE TABLE test.Environment(
+   EnvironmentID   VARCHAR(20) ,
+   EnvironmentName VARCHAR(20) ,
+   PRIMARY KEY (EnvironmentID)
+);
